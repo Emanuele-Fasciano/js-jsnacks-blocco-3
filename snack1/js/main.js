@@ -15,7 +15,3 @@ function getRandomNumber(min, max) { //genero un range minimo e massimo
 console.log(getRandomNumber(minNumber, maxNumber)) // stampo
 
 
-
-
-
-
