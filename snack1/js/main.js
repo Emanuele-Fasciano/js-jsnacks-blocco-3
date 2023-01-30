@@ -2,15 +2,17 @@
 // Chiedi all'utente il valore minimo
 // ed il valore massimo del range in cui generare il numero.
 
-const minNumber = parseInt(prompt("valore minimo"))
+const minNumber = parseInt(prompt("valore minimo")) //chiedo i valori minimi e massimi all'utente
 const maxNumber = parseInt(prompt("valore massimo"))
 
- let randomNumber = Math.floor(Math.random() * maxNumber) + 1
 
-// while(randomNumber > minNumber){
-//     randomNumber = Math.floor(Math.random() * maxNumber) + 1
-    console.log(randomNumber);
-// }
+function getRandomNumber(min, max) { //genero un range minimo e massimo
+    let differenceRange = max - min + 1;
+    let result = Math.floor(Math.random() * differenceRange) + min;
+
+    return result;
+}
+console.log(getRandomNumber(minNumber, maxNumber)) // stampo
 
 
 

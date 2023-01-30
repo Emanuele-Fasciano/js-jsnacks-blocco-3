@@ -3,15 +3,16 @@
 // Continua a chiedere i numeri all'utente e a inserirli nell'array
 // fino a quando la somma degli elementi è minore di 50.
 
-const numbersArray = [];
+let numbersArray = []; // creo un array vuoto
 
-let userNUmber = parseInt(prompt("inserisci un numero"));
+let somma = 0; // dichiaro una somma 0 
 
-while(numbersArray > 50 ) {
+while(somma < 50 ) {  // finchè la somma sarà minore di 50 chiederò all'utente un numero
     userNUmber = parseInt(prompt("inserisci un numero"));
-    numbersArray.push(userNUmber)
+    somma += userNUmber; // sommo i numeri dell'utente fino a quando raggiungerà la somma 50
+    numbersArray.push(userNUmber); //pusho i numeri dell' utente nell array
 }
-console.log(numbersArray);
+console.log(numbersArray); // stampo
 
 
 
